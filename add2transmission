@@ -1,0 +1,2 @@
+#!/bin/bash
+transmission-remote https://transmission.example.com/transmission -n username:password -a $1
