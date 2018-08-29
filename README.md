@@ -1,7 +1,8 @@
 # Firefox to transmission-daemon
 Just a little script to use in conjuntion with transmission-cli and firefox to add new torrents on those sites which download button is a php function and you can't use any firefox extension like [Torrent to Web](https://github.com/DASPRiD/Torrent-to-Web) and forces you to download the torrent file and then upload to your transmission-daemon.
 
-**IMPORTANT** This script is intended to use in computers where you DON'T have Transmission installed, but you want to send it to your REMOTE Transmission instance.
+**IMPORTANT** 
+This script is intended to use in computers where you DON'T have Transmission installed, but you want to send it to your REMOTE Transmission instance.
 
 # Prerequisites
 - Bash
@@ -10,9 +11,10 @@ Just a little script to use in conjuntion with transmission-cli and firefox to a
 
 # Usage
 Once downloaded the script you'll need to modify the credentials and the URL of your transmission-daemon accordingly. If your daemon doesn't use crendentials, remove the `-n username:password` parameter.
-**IMPORTANT** If you have credentials, as those will be in clear text, change the persmission so anyone can't look then content of the script
+**IMPORTANT** 
+If you have credentials, as those will be in clear text, change the persmission so anyone can't look then content of the script
 ```
-chmod 0500 add2transmission
+chmod 0600 add2transmission 
 ```
 Copy this script into a executables PATH (i.e.: `/usr/bin` or `/usr/local/bin`)
 
